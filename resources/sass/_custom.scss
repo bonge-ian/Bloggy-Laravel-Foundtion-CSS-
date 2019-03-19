@@ -1,0 +1,51 @@
+* {
+    @extend %no-padding;
+}
+
+body {
+    font-family: $body-font-family;
+    font-size: $body-font;
+    background-color: $body-bg-color;
+    color: $body-text-color;
+}
+.top-bar {
+    padding: 0;
+}
+.top-bar, .title-bar {
+    @include nav-height(75px);
+}
+
+.top-bar, .top-bar ul, .title-bar {
+    background-color: $nav-bg-color;
+    color: $nav-color;
+}
+
+ul.menu, .dropdown.menu {
+    .menu-text, li a {
+        line-height: 50px;
+    }
+    li a, li.is-active a {
+        color: inherit;
+        background: inherit;
+
+        &:hover {
+            background: #EB5286;
+            color: #fefefe;
+        }
+    }
+}
+.drilldown .is-drilldown-submenu {
+    background-color: $nav-bg-color;
+    color: $nav-color;
+
+    a:hover {
+        background: #EB5286;
+        color: #fefefe;
+    }
+}
+
+
+
+
+
+

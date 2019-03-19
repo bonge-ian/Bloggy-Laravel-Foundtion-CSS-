@@ -1,0 +1,17 @@
+@mixin transition($element, $speed, $effect) {
+    -moz-transition: $element $speed $effect;
+    -webkit-transition: $element $speed $effect;
+    transition: $element $speed $effect;
+}
+@mixin hover-bg($color) {
+    background-color: rgba($color, .75);
+    @include transition(background-color, 400ms, ease-in);
+
+    &:hover {
+        background-color: $color;
+    }
+}
+
+@mixin nav-height($height) {
+    height: $height;
+}
