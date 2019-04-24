@@ -1,5 +1,5 @@
 ## Bloggy
----------- 
+
 This is a simple blog web application made by Laravel 5.8 with Foundation CSS.
 
 This applications is an all inclusive CRUD application.
